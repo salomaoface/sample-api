@@ -1,0 +1,38 @@
+curl -X GET -H 'User-Agent: insomnia/8.6.0' 'http://127.0.0.1:3333/health'
+
+curl -X GET -H 'User-Agent: insomnia/8.5.1' 'http://127.0.0.1:3333/farmers'
+
+curl -X GET -H 'User-Agent: insomnia/8.5.1' 'http://127.0.0.1:3333/farmers/2bd44acd-1a22-4168-92cc-3fd147213a96'
+
+curl -X GET -H 'User-Agent: insomnia/8.5.1' 'http://127.0.0.1:3333/farmers?search=byState'
+
+curl -X GET -H 'User-Agent: insomnia/8.5.1' 'http://127.0.0.1:3333/farmers?search=byTillage'
+
+curl -X GET -H 'User-Agent: insomnia/8.5.1' 'http://127.0.0.1:3333/farmers?search=totalFarms'
+
+curl -X GET -H 'User-Agent: insomnia/8.5.1' 'http://127.0.0.1:3333/farmers?search=totalArea'
+
+curl -X GET -H 'User-Agent: insomnia/8.5.1' 'http://127.0.0.1:3333/farmers?search=soilUsage'
+
+curl -X POST -H 'Content-Type: application/json' -H 'User-Agent: insomnia/8.6.0' -d '{
+	"documentId": "14731249000181",
+	"farmerName": "Fazendeiro teste inclusão 2",
+	"farmName": "Fazenda teste inclusão 2",
+	"city": "Viamão",
+	"stateId": "949aa6f0-5116-4edc-8f35-8e82ac12f29b",
+	"forestArea": 2,
+	"arableArea": 150,
+	"totalArea": 152,
+	"tillages": ["68aa3eb4-9b35-4485-8af6-94b90a3e208a", "7063c456-42bb-4ae0-b03d-cedcc2dda89e"]
+}' 'http://127.0.0.1:3333/farmers'
+
+curl -X PUT -H 'Content-Type: application/json' -H 'User-Agent: insomnia/8.6.0' -d '{
+	"farmerName": "Fazendeiro teste inclusão",
+	"farmName": "Fazenda teste inclusão",
+	"city": "Tapes",
+	"stateId": "949aa6f0-5116-4edc-8f35-8e82ac12f29b",
+	"forestArea": 5,
+	"arableArea": 150,
+	"totalArea": 155,
+	"tillages": ["2d122dd0-91d8-441c-801d-acddd0431ac8", "b3e84949-113b-4331-b821-c251fbbca021"]
+}' 'http://127.0.0.1:3333/farmers/b323cdeb-c663-41e8-9b0c-c6ce1d7efba8'

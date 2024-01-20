@@ -1,0 +1,764 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v8.6.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 30.75,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:3333/health",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.6.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "159"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 14:12:03 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 159,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"healthy\":true,\"report\":{\"env\":{\"displayName\":\"Node Env Check\",\"health\":{\"healthy\":true}},\"appKey\":{\"displayName\":\"App Key Check\",\"health\":{\"healthy\":true}}}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 30.75,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "health"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 162.09699999999998,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:3333/farmers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.5.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "8153"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 14:12:09 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 8153,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":\"fa499da0-3782-42c7-9abb-55a75362319a\",\"document_id\":\"26928307000140\",\"farmer_name\":\"Fazendeiro 16\",\"farm_name\":\"Fazenda 16\",\"city\":\"Franca\",\"forest_area\":10,\"arable_area\":152,\"total_area\":162,\"created_at\":\"2024-01-20T11:07:27.040-03:00\",\"updated_at\":\"2024-01-20T11:07:27.040-03:00\",\"state_id\":\"51ac922f-34ee-42e9-b01d-c7309e38ceda\"},{\"id\":\"f02cfae2-8150-41ff-9569-5a6d49a53499\",\"document_id\":\"37953993000126\",\"farmer_name\":\"Fazendeiro 14\",\"farm_name\":\"Fazenda 14\",\"city\":\"São José\",\"forest_area\":2,\"arable_area\":135,\"total_area\":137,\"created_at\":\"2024-01-20T11:07:27.039-03:00\",\"updated_at\":\"2024-01-20T11:07:27.039-03:00\",\"state_id\":\"2016b9e8-3f65-494e-83d6-963f171eb4b4\"},{\"id\":\"e30f34e9-11fe-4a5a-86d9-b358d6d736f4\",\"document_id\":\"68121295009\",\"farmer_name\":\"Fazendeiro 1\",\"farm_name\":\"Fazenda 1\",\"city\":\"Fortaleza\",\"forest_area\":2,\"arable_area\":10,\"total_area\":12,\"created_at\":\"2024-01-20T11:07:27.026-03:00\",\"updated_at\":\"2024-01-20T11:07:27.026-03:00\",\"state_id\":\"9dd6d59d-2832-4d13-b167-b1e5574a15b1\"},{\"id\":\"deeec87c-a62d-4f5e-9291-6b0eacf70c2e\",\"document_id\":\"97720936000129\",\"farmer_name\":\"Fazendeiro 10\",\"farm_name\":\"Fazenda 10\",\"city\":\"Dourados\",\"forest_area\":10,\"arable_area\":150,\"total_area\":160,\"created_at\":\"2024-01-20T11:07:27.035-03:00\",\"updated_at\":\"2024-01-20T11:07:27.035-03:00\",\"state_id\":\"a776bb76-dd38-4f3b-a739-48de3c37a7a7\"},{\"id\":\"d41188a8-b9e3-4c46-864b-da6e5085a3ad\",\"document_id\":\"95086655056\",\"farmer_name\":\"Fazendeiro 6\",\"farm_name\":\"Fazenda 6\",\"city\":\"Canarana\",\"forest_area\":6,\"arable_area\":120,\"total_area\":126,\"created_at\":\"2024-01-20T11:07:27.032-03:00\",\"updated_at\":\"2024-01-20T11:07:27.032-03:00\",\"state_id\":\"51e53778-5303-43ce-9b7c-3b9d0a3b60e3\"},{\"id\":\"d198a4ed-82bd-47e8-b13c-2f55160530d8\",\"document_id\":\"33352901000100\",\"farmer_name\":\"Fazendeiro 22\",\"farm_name\":\"Fazenda 22\",\"city\":\"Dourados\",\"forest_area\":1,\"arable_area\":153,\"total_area\":154,\"created_at\":\"2024-01-20T11:07:27.046-03:00\",\"updated_at\":\"2024-01-20T11:07:27.046-03:00\",\"state_id\":\"51e53778-5303-43ce-9b7c-3b9d0a3b60e3\"},{\"id\":\"d14ca88a-49b5-4a95-8d8d-5828f03f4179\",\"document_id\":\"57064552000180\",\"farmer_name\":\"Fazendeiro 17\",\"farm_name\":\"Fazenda 17\",\"city\":\"Franca\",\"forest_area\":5,\"arable_area\":114,\"total_area\":119,\"created_at\":\"2024-01-20T11:07:27.041-03:00\",\"updated_at\":\"2024-01-20T11:07:27.041-03:00\",\"state_id\":\"51ac922f-34ee-42e9-b01d-c7309e38ceda\"},{\"id\":\"c7531ecc-5994-4442-8be6-78a133664dc0\",\"document_id\":\"20594217000184\",\"farmer_name\":\"Fazendeiro 23\",\"farm_name\":\"Fazenda 23\",\"city\":\"Franca\",\"forest_area\":5,\"arable_area\":110,\"total_area\":115,\"created_at\":\"2024-01-20T11:07:27.047-03:00\",\"updated_at\":\"2024-01-20T11:07:27.047-03:00\",\"state_id\":\"51ac922f-34ee-42e9-b01d-c7309e38ceda\"},{\"id\":\"bea4b77d-db16-4883-924c-5393a32066ac\",\"document_id\":\"44245981000102\",\"farmer_name\":\"Fazendeiro 15\",\"farm_name\":\"Fazenda 15\",\"city\":\"Anitápolis\",\"forest_area\":2,\"arable_area\":135,\"total_area\":137,\"created_at\":\"2024-01-20T11:07:27.039-03:00\",\"updated_at\":\"2024-01-20T11:07:27.039-03:00\",\"state_id\":\"2016b9e8-3f65-494e-83d6-963f171eb4b4\"},{\"id\":\"b9c88bec-c8bd-4691-8e52-21eeb95a6848\",\"document_id\":\"87077263000187\",\"farmer_name\":\"Fazendeiro 18\",\"farm_name\":\"Fazenda 18\",\"city\":\"Canarana\",\"forest_area\":6,\"arable_area\":121,\"total_area\":127,\"created_at\":\"2024-01-20T11:07:27.042-03:00\",\"updated_at\":\"2024-01-20T11:07:27.042-03:00\",\"state_id\":\"a776bb76-dd38-4f3b-a739-48de3c37a7a7\"},{\"id\":\"a849e4ac-ccb0-4c7f-aac2-483afb28f69d\",\"document_id\":\"54670877038\",\"farmer_name\":\"Fazendeiro 5\",\"farm_name\":\"Fazenda 5\",\"city\":\"Brasnorte\",\"forest_area\":5,\"arable_area\":340,\"total_area\":345,\"created_at\":\"2024-01-20T11:07:27.031-03:00\",\"updated_at\":\"2024-01-20T11:07:27.031-03:00\",\"state_id\":\"51e53778-5303-43ce-9b7c-3b9d0a3b60e3\"},{\"id\":\"9090b781-952a-48cd-a3aa-808432d2d1f1\",\"document_id\":\"49144731000\",\"farmer_name\":\"Fazendeiro 4\",\"farm_name\":\"Fazenda 4\",\"city\":\"Diamantina\",\"forest_area\":10,\"arable_area\":100,\"total_area\":110,\"created_at\":\"2024-01-20T11:07:27.030-03:00\",\"updated_at\":\"2024-01-20T11:07:27.030-03:00\",\"state_id\":\"478296b7-7b12-4c84-a41f-5dbe7e1b247c\"},{\"id\":\"8ff70e2d-f227-4f44-8ee6-188f85dc8aa5\",\"document_id\":\"26918172026\",\"farmer_name\":\"Fazendeiro 3\",\"farm_name\":\"Fazenda 3\",\"city\":\"Ouro Preto\",\"forest_area\":2,\"arable_area\":5,\"total_area\":7,\"created_at\":\"2024-01-20T11:07:27.029-03:00\",\"updated_at\":\"2024-01-20T11:07:27.029-03:00\",\"state_id\":\"478296b7-7b12-4c84-a41f-5dbe7e1b247c\"},{\"id\":\"8bdef936-02fd-4669-95ec-df21e4bd37fa\",\"document_id\":\"62467157000189\",\"farmer_name\":\"Fazendeiro 24\",\"farm_name\":\"Fazenda 24\",\"city\":\"Uruguaiana\",\"forest_area\":16,\"arable_area\":212,\"total_area\":228,\"created_at\":\"2024-01-20T11:07:27.048-03:00\",\"updated_at\":\"2024-01-20T11:07:27.048-03:00\",\"state_id\":\"949aa6f0-5116-4edc-8f35-8e82ac12f29b\"},{\"id\":\"5d98d3aa-0421-43b1-8fab-9e20c46f1258\",\"document_id\":\"79765854000119\",\"farmer_name\":\"Fazendeiro 12\",\"farm_name\":\"Fazenda 12\",\"city\":\"Uruguaiana\",\"forest_area\":20,\"arable_area\":128,\"total_area\":148,\"created_at\":\"2024-01-20T11:07:27.037-03:00\",\"updated_at\":\"2024-01-20T11:07:27.037-03:00\",\"state_id\":\"949aa6f0-5116-4edc-8f35-8e82ac12f29b\"},{\"id\":\"59c02c84-7e37-458b-bd18-6d19fa5d71db\",\"document_id\":\"83059907000153\",\"farmer_name\":\"Fazendeiro 8\",\"farm_name\":\"Fazenda 8\",\"city\":\"Carangola\",\"forest_area\":2,\"arable_area\":50,\"total_area\":52,\"created_at\":\"2024-01-20T11:07:27.033-03:00\",\"updated_at\":\"2024-01-20T11:07:27.033-03:00\",\"state_id\":\"478296b7-7b12-4c84-a41f-5dbe7e1b247c\"},{\"id\":\"3f7be5fd-5de1-4efc-ae11-16a040866ee8\",\"document_id\":\"64199018000147\",\"farmer_name\":\"Fazendeiro 20\",\"farm_name\":\"Fazenda 20\",\"city\":\"Carangola\",\"forest_area\":2,\"arable_area\":50,\"total_area\":52,\"created_at\":\"2024-01-20T11:07:27.044-03:00\",\"updated_at\":\"2024-01-20T11:07:27.044-03:00\",\"state_id\":\"949aa6f0-5116-4edc-8f35-8e82ac12f29b\"},{\"id\":\"1bae70d3-449e-465c-ab87-d41ce658e776\",\"document_id\":\"66197928043\",\"farmer_name\":\"Fazendeiro 2\",\"farm_name\":\"Fazenda 2\",\"city\":\"Crato\",\"forest_area\":2,\"arable_area\":5,\"total_area\":7,\"created_at\":\"2024-01-20T11:07:27.028-03:00\",\"updated_at\":\"2024-01-20T11:07:27.028-03:00\",\"state_id\":\"9dd6d59d-2832-4d13-b167-b1e5574a15b1\"},{\"id\":\"1ae4b5ae-ce6f-4918-8025-ec5c8f46e127\",\"document_id\":\"86004998000118\",\"farmer_name\":\"Fazendeiro 11\",\"farm_name\":\"Fazenda 11\",\"city\":\"Franca\",\"forest_area\":5,\"arable_area\":110,\"total_area\":115,\"created_at\":\"2024-01-20T11:07:27.036-03:00\",\"updated_at\":\"2024-01-20T11:07:27.036-03:00\",\"state_id\":\"51ac922f-34ee-42e9-b01d-c7309e38ceda\"},{\"id\":\"16f2b82f-2865-4985-a933-626ad5ece1cb\",\"document_id\":\"29872600000121\",\"farmer_name\":\"Fazendeiro 19\",\"farm_name\":\"Fazenda 19\",\"city\":\"Diamantina\",\"forest_area\":2,\"arable_area\":101,\"total_area\":103,\"created_at\":\"2024-01-20T11:07:27.043-03:00\",\"updated_at\":\"2024-01-20T11:07:27.043-03:00\",\"state_id\":\"478296b7-7b12-4c84-a41f-5dbe7e1b247c\"},{\"id\":\"0da9b432-ae84-4fb0-8b7e-e9f7eb5e5adf\",\"document_id\":\"81240129000179\",\"farmer_name\":\"Fazendeiro 21\",\"farm_name\":\"Fazenda 21\",\"city\":\"Campo Verde\",\"forest_area\":2,\"arable_area\":55,\"total_area\":57,\"created_at\":\"2024-01-20T11:07:27.045-03:00\",\"updated_at\":\"2024-01-20T11:07:27.045-03:00\",\"state_id\":\"949aa6f0-5116-4edc-8f35-8e82ac12f29b\"},{\"id\":\"090652b9-0ad5-4d3b-a015-caf23e02b8db\",\"document_id\":\"27479704000145\",\"farmer_name\":\"Fazendeiro 7\",\"farm_name\":\"Fazenda 7\",\"city\":\"Baturite\",\"forest_area\":2,\"arable_area\":100,\"total_area\":102,\"created_at\":\"2024-01-20T11:07:27.032-03:00\",\"updated_at\":\"2024-01-20T11:07:27.032-03:00\",\"state_id\":\"9dd6d59d-2832-4d13-b167-b1e5574a15b1\"},{\"id\":\"05020f23-114a-48df-a4f1-ded0f5ae2447\",\"document_id\":\"16245040000133\",\"farmer_name\":\"Fazendeiro 9\",\"farm_name\":\"Fazenda 9\",\"city\":\"Campo Verde\",\"forest_area\":25,\"arable_area\":400,\"total_area\":425,\"created_at\":\"2024-01-20T11:07:27.034-03:00\",\"updated_at\":\"2024-01-20T11:07:27.034-03:00\",\"state_id\":\"51e53778-5303-43ce-9b7c-3b9d0a3b60e3\"},{\"id\":\"00110cc3-d229-4467-9be6-aedba3b9cb7d\",\"document_id\":\"52202442000114\",\"farmer_name\":\"Fazendeiro 13\",\"farm_name\":\"Fazenda 13\",\"city\":\"Curitiba\",\"forest_area\":2,\"arable_area\":105,\"total_area\":107,\"created_at\":\"2024-01-20T11:07:27.038-03:00\",\"updated_at\":\"2024-01-20T11:07:27.038-03:00\",\"state_id\":\"8893599d-c91d-487d-ab8f-def0bda0f9a1\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 162.09699999999998,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "farmersAll"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 5.868,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:3333/farmers/2bd44acd-1a22-4168-92cc-3fd147213a96",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.5.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "684"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 17:00:27 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 684,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":\"2bd44acd-1a22-4168-92cc-3fd147213a96\",\"document_id\":\"14731249000181\",\"farmer_name\":\"Fazendeiro teste inclusão 2\",\"farm_name\":\"Fazenda teste inclusão 2\",\"city\":\"Viamão\",\"forest_area\":2,\"arable_area\":150,\"total_area\":152,\"created_at\":\"2024-01-20T13:57:44.731-03:00\",\"updated_at\":\"2024-01-20T13:57:44.731-03:00\",\"state_id\":\"949aa6f0-5116-4edc-8f35-8e82ac12f29b\",\"tillages\":[{\"id\":\"7063c456-42bb-4ae0-b03d-cedcc2dda89e\",\"name\":\"Cafe\",\"created_at\":\"2024-01-20T11:07:27.002-03:00\",\"updated_at\":\"2024-01-20T11:07:27.002-03:00\"},{\"id\":\"68aa3eb4-9b35-4485-8af6-94b90a3e208a\",\"name\":\"Banana\",\"created_at\":\"2024-01-20T11:07:27.003-03:00\",\"updated_at\":\"2024-01-20T11:07:27.003-03:00\"}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.868,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "farmersByID"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 4.19,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:3333/farmers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.5.1"
+						}
+					],
+					"queryString": [
+						{
+							"name": "search",
+							"value": "byState"
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "209"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 16:59:00 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 209,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"name\":\"SC\",\"total\":\"2\"},{\"name\":\"MT\",\"total\":\"4\"},{\"name\":\"SP\",\"total\":\"4\"},{\"name\":\"CE\",\"total\":\"3\"},{\"name\":\"RS\",\"total\":\"6\"},{\"name\":\"PR\",\"total\":\"1\"},{\"name\":\"MG\",\"total\":\"4\"},{\"name\":\"MS\",\"total\":\"2\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 4.19,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "farmersByState"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 6.091,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:3333/farmers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.5.1"
+						}
+					],
+					"queryString": [
+						{
+							"name": "search",
+							"value": "byTillage"
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "145"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 16:58:41 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 145,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"name\":\"Milho\",\"total\":\"8\"},{\"name\":\"Banana\",\"total\":\"8\"},{\"name\":\"Soja\",\"total\":\"8\"},{\"name\":\"Arroz\",\"total\":\"7\"},{\"name\":\"Cafe\",\"total\":\"8\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 6.091,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "farmersByTillage"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 203.237,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:3333/farmers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.5.1"
+						}
+					],
+					"queryString": [
+						{
+							"name": "search",
+							"value": "totalFarms"
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "614"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 17:31:59 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 614,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"farms\":[{\"name\":\"Fazenda 21\"},{\"name\":\"Fazenda 4\"},{\"name\":\"Fazenda 12\"},{\"name\":\"Fazenda 8\"},{\"name\":\"Fazenda teste inclusão 2\"},{\"name\":\"Fazenda 18\"},{\"name\":\"Fazenda 17\"},{\"name\":\"Fazenda 5\"},{\"name\":\"Fazenda 6\"},{\"name\":\"Fazenda 2\"},{\"name\":\"Fazenda teste inclusão\"},{\"name\":\"Fazenda 1\"},{\"name\":\"Fazenda 14\"},{\"name\":\"Fazenda 10\"},{\"name\":\"Fazenda 19\"},{\"name\":\"Fazenda 23\"},{\"name\":\"Fazenda 22\"},{\"name\":\"Fazenda 11\"},{\"name\":\"Fazenda 24\"},{\"name\":\"Fazenda 16\"},{\"name\":\"Fazenda 13\"},{\"name\":\"Fazenda 15\"},{\"name\":\"Fazenda 20\"},{\"name\":\"Fazenda 3\"},{\"name\":\"Fazenda 7\"},{\"name\":\"Fazenda 9\"}],\"amount\":26}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 203.237,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "farmTotalAmount"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 204.405,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:3333/farmers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.5.1"
+						}
+					],
+					"queryString": [
+						{
+							"name": "search",
+							"value": "totalArea"
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "1037"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 17:34:46 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 1037,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"farms\":[{\"name\":\"Fazenda 1\",\"totalArea\":12},{\"name\":\"Fazenda 2\",\"totalArea\":7},{\"name\":\"Fazenda 3\",\"totalArea\":7},{\"name\":\"Fazenda 4\",\"totalArea\":110},{\"name\":\"Fazenda 5\",\"totalArea\":345},{\"name\":\"Fazenda 6\",\"totalArea\":126},{\"name\":\"Fazenda 7\",\"totalArea\":102},{\"name\":\"Fazenda 8\",\"totalArea\":52},{\"name\":\"Fazenda 9\",\"totalArea\":425},{\"name\":\"Fazenda 10\",\"totalArea\":160},{\"name\":\"Fazenda 11\",\"totalArea\":115},{\"name\":\"Fazenda 12\",\"totalArea\":148},{\"name\":\"Fazenda 13\",\"totalArea\":107},{\"name\":\"Fazenda 14\",\"totalArea\":137},{\"name\":\"Fazenda 15\",\"totalArea\":137},{\"name\":\"Fazenda 16\",\"totalArea\":162},{\"name\":\"Fazenda 17\",\"totalArea\":119},{\"name\":\"Fazenda 18\",\"totalArea\":127},{\"name\":\"Fazenda 19\",\"totalArea\":103},{\"name\":\"Fazenda 20\",\"totalArea\":52},{\"name\":\"Fazenda 21\",\"totalArea\":57},{\"name\":\"Fazenda 22\",\"totalArea\":154},{\"name\":\"Fazenda 23\",\"totalArea\":115},{\"name\":\"Fazenda 24\",\"totalArea\":228},{\"name\":\"Fazenda teste inclusão\",\"totalArea\":155},{\"name\":\"Fazenda teste inclusão 2\",\"totalArea\":152}],\"totalAreaInHectares\":3414}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 204.405,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "farmTotalArea"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 211.127,
+				"request": {
+					"method": "GET",
+					"url": "http://127.0.0.1:3333/farmers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.5.1"
+						}
+					],
+					"queryString": [
+						{
+							"name": "search",
+							"value": "soilUsage"
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "3949"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 17:56:17 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 3949,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"farms\":[{\"name\":\"Fazenda 1\",\"arableArea\":10,\"forestArea\":2,\"totalArea\":12,\"percentArableArea\":83.33333333333333,\"percentForestArea\":16.666666666666668},{\"name\":\"Fazenda 2\",\"arableArea\":5,\"forestArea\":2,\"totalArea\":7,\"percentArableArea\":71.42857142857143,\"percentForestArea\":28.571428571428573},{\"name\":\"Fazenda 3\",\"arableArea\":5,\"forestArea\":2,\"totalArea\":7,\"percentArableArea\":71.42857142857143,\"percentForestArea\":28.571428571428573},{\"name\":\"Fazenda 4\",\"arableArea\":100,\"forestArea\":10,\"totalArea\":110,\"percentArableArea\":90.9090909090909,\"percentForestArea\":9.090909090909092},{\"name\":\"Fazenda 5\",\"arableArea\":340,\"forestArea\":5,\"totalArea\":345,\"percentArableArea\":98.55072463768116,\"percentForestArea\":1.4492753623188406},{\"name\":\"Fazenda 6\",\"arableArea\":120,\"forestArea\":6,\"totalArea\":126,\"percentArableArea\":95.23809523809524,\"percentForestArea\":4.761904761904762},{\"name\":\"Fazenda 7\",\"arableArea\":100,\"forestArea\":2,\"totalArea\":102,\"percentArableArea\":98.03921568627452,\"percentForestArea\":1.9607843137254901},{\"name\":\"Fazenda 8\",\"arableArea\":50,\"forestArea\":2,\"totalArea\":52,\"percentArableArea\":96.15384615384616,\"percentForestArea\":3.8461538461538463},{\"name\":\"Fazenda 9\",\"arableArea\":400,\"forestArea\":25,\"totalArea\":425,\"percentArableArea\":94.11764705882354,\"percentForestArea\":5.882352941176471},{\"name\":\"Fazenda 10\",\"arableArea\":150,\"forestArea\":10,\"totalArea\":160,\"percentArableArea\":93.75,\"percentForestArea\":6.25},{\"name\":\"Fazenda 11\",\"arableArea\":110,\"forestArea\":5,\"totalArea\":115,\"percentArableArea\":95.65217391304348,\"percentForestArea\":4.3478260869565215},{\"name\":\"Fazenda 12\",\"arableArea\":128,\"forestArea\":20,\"totalArea\":148,\"percentArableArea\":86.48648648648648,\"percentForestArea\":13.513513513513514},{\"name\":\"Fazenda 13\",\"arableArea\":105,\"forestArea\":2,\"totalArea\":107,\"percentArableArea\":98.13084112149532,\"percentForestArea\":1.8691588785046729},{\"name\":\"Fazenda 14\",\"arableArea\":135,\"forestArea\":2,\"totalArea\":137,\"percentArableArea\":98.54014598540147,\"percentForestArea\":1.4598540145985401},{\"name\":\"Fazenda 15\",\"arableArea\":135,\"forestArea\":2,\"totalArea\":137,\"percentArableArea\":98.54014598540147,\"percentForestArea\":1.4598540145985401},{\"name\":\"Fazenda 16\",\"arableArea\":152,\"forestArea\":10,\"totalArea\":162,\"percentArableArea\":93.82716049382717,\"percentForestArea\":6.172839506172839},{\"name\":\"Fazenda 17\",\"arableArea\":114,\"forestArea\":5,\"totalArea\":119,\"percentArableArea\":95.7983193277311,\"percentForestArea\":4.201680672268908},{\"name\":\"Fazenda 18\",\"arableArea\":121,\"forestArea\":6,\"totalArea\":127,\"percentArableArea\":95.2755905511811,\"percentForestArea\":4.724409448818897},{\"name\":\"Fazenda 19\",\"arableArea\":101,\"forestArea\":2,\"totalArea\":103,\"percentArableArea\":98.05825242718447,\"percentForestArea\":1.941747572815534},{\"name\":\"Fazenda 20\",\"arableArea\":50,\"forestArea\":2,\"totalArea\":52,\"percentArableArea\":96.15384615384616,\"percentForestArea\":3.8461538461538463},{\"name\":\"Fazenda 21\",\"arableArea\":55,\"forestArea\":2,\"totalArea\":57,\"percentArableArea\":96.49122807017544,\"percentForestArea\":3.508771929824561},{\"name\":\"Fazenda 22\",\"arableArea\":153,\"forestArea\":1,\"totalArea\":154,\"percentArableArea\":99.35064935064935,\"percentForestArea\":0.6493506493506493},{\"name\":\"Fazenda 23\",\"arableArea\":110,\"forestArea\":5,\"totalArea\":115,\"percentArableArea\":95.65217391304348,\"percentForestArea\":4.3478260869565215},{\"name\":\"Fazenda 24\",\"arableArea\":212,\"forestArea\":16,\"totalArea\":228,\"percentArableArea\":92.98245614035088,\"percentForestArea\":7.017543859649122},{\"name\":\"Fazenda teste inclusão\",\"arableArea\":150,\"forestArea\":5,\"totalArea\":155,\"percentArableArea\":96.7741935483871,\"percentForestArea\":3.225806451612903},{\"name\":\"Fazenda teste inclusão 2\",\"arableArea\":150,\"forestArea\":2,\"totalArea\":152,\"percentArableArea\":98.6842105263158,\"percentForestArea\":1.3157894736842106}],\"totals\":{\"sumArableArea\":3261,\"sumForestArea\":153,\"sumAreaTotal\":3414,\"percentArableArea\":95.51845342706503,\"percentForestArea\":4.481546572934974}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 211.127,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "farmSoilUsage"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 28.132,
+				"request": {
+					"method": "POST",
+					"url": "http://127.0.0.1:3333/farmers",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.6.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"documentId\": \"14731249000181\",\n\t\"farmerName\": \"Fazendeiro teste inclusão 2\",\n\t\"farmName\": \"Fazenda teste inclusão 2\",\n\t\"city\": \"Viamão\",\n\t\"stateId\": \"949aa6f0-5116-4edc-8f35-8e82ac12f29b\",\n\t\"forestArea\": 2,\n\t\"arableArea\": 150,\n\t\"totalArea\": 152,\n\t\"tillages\": [\"68aa3eb4-9b35-4485-8af6-94b90a3e208a\", \"7063c456-42bb-4ae0-b03d-cedcc2dda89e\"]\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "319"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 20 Jan 2024 16:57:44 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 319,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"documentId\":\"14731249000181\",\"farmerName\":\"Fazendeiro teste inclusão 2\",\"farmName\":\"Fazenda teste inclusão 2\",\"city\":\"Viamão\",\"stateId\":\"949aa6f0-5116-4edc-8f35-8e82ac12f29b\",\"forestArea\":2,\"arableArea\":150,\"totalArea\":152,\"tillages\":[\"68aa3eb4-9b35-4485-8af6-94b90a3e208a\",\"7063c456-42bb-4ae0-b03d-cedcc2dda89e\"]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 28.132,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "farmersCreate"
+			},
+			{
+				"startedDateTime": "2024-01-20T17:58:14.792Z",
+				"time": 218.025,
+				"request": {
+					"method": "PUT",
+					"url": "http://127.0.0.1:3333/farmers/b323cdeb-c663-41e8-9b0c-c6ce1d7efba8",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/8.6.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"farmerName\": \"Fazendeiro teste inclusão\",\n\t\"farmName\": \"Fazenda teste inclusão\",\n\t\"city\": \"Tapes\",\n\t\"stateId\": \"949aa6f0-5116-4edc-8f35-8e82ac12f29b\",\n\t\"forestArea\": 5,\n\t\"arableArea\": 150,\n\t\"totalArea\": 155,\n\t\"tillages\": [\"2d122dd0-91d8-441c-801d-acddd0431ac8\", \"b3e84949-113b-4331-b821-c251fbbca021\"]\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "content-length",
+							"value": "44"
+						},
+						{
+							"name": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 19 Jan 2024 22:34:18 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 44,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"message\":\"Dados atualizados com sucesso.\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 218.025,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "famerUpdate"
+			}
+		]
+	}
+}
