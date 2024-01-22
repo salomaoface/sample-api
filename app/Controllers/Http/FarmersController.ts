@@ -165,7 +165,10 @@ export default class FarmersController {
       })
     }
 
-    return response.send(payload)
+    return response.json({
+      id: farmerResult.id,
+      message: 'Cadastrado registrado com sucesso.',
+    })
   }
 
   // TODO: to implement transactions
@@ -209,7 +212,6 @@ export default class FarmersController {
       })
     }
 
-    console.log(JSON.stringify(famerUpdated))
     return response.json({
       message: 'Dados atualizados com sucesso.',
     })
@@ -234,7 +236,7 @@ export default class FarmersController {
     await farmer.delete()
 
     return response.json({
-      message: 'Cadastro da fazenda deletado com sucesso.',
+      message: 'Cadastro deletado com sucesso.',
     })
   }
 }
