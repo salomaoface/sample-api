@@ -135,6 +135,7 @@ export default class FarmersController {
     return response.json(farmer)
   }
 
+  // TODO: to implement transactions
   public async store({ request, response }: HttpContextContract) {
     const payload = await request.validate(CreateFarmerValidator)
 
@@ -167,6 +168,7 @@ export default class FarmersController {
     return response.send(payload)
   }
 
+  // TODO: to implement transactions
   public async update({ request, response }: HttpContextContract) {
     const id = request.param('id')
     const payload = await request.validate(UpdateFarmerValidator)
@@ -213,5 +215,26 @@ export default class FarmersController {
     })
   }
 
-  public async destroy({}: HttpContextContract) {}
+  // TODO: to implement transactions
+  public async destroy({ request, response }: HttpContextContract) {
+    const id = request.param('id')
+
+    const farmer = await Farmer.query()
+      .preload('tillages', (query) => {
+        query.pivotColumns(['id'])
+      })
+      .where('id', id)
+      .firstOrFail()
+
+    const tillages = farmer.tillages.concat().map((til) => {
+      return til.id
+    })
+
+    await farmer.related('tillages').detach(tillages)
+    await farmer.delete()
+
+    return response.json({
+      message: 'Cadastro da fazenda deletado com sucesso.',
+    })
+  }
 }
